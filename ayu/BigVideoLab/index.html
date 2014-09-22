@@ -1,59 +1,59 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Fullscreen Video Slideshow with BigVideo.js</title>
-    <meta name="description" content="Fullscreen Video Slideshow with BigVideo.js - The jQuery Plugin for Big Background Video" />
-    <meta name="author" content="John Polacek for Codrops" />
-    <meta name="keywords" content="fullscreen, video, slideshow, bigvideo.js, jquery, background, images" />
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="../favicon.ico"> 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css' />
-    <!-- APP STYLES -->
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <!-- modernizer -->
-    <script src="js/modernizr-2.5.3.min.js"></script>
-    <!--[if lte IE 8]>
-    <style>
-        /* Rotation of the arrow element for IE < 9 */
-        .next-icon { /* IE Matrix Calculator - http: //www.boogdesign.com/examples/transforms/matrix-calculator.html */;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand')";
-            filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand');
-        }
-    </style>
-    <![endif]-->
+  <meta charset="utf-8">
+	<title>Make an HTML5 video a background - div bg demo</title>
+	<link rel="stylesheet" href="assets/framework.css"/>
+
+	<link rel="stylesheet" href="assets/style.css"/>
+
+	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.videoBG.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
 </head>
 <body>
+	<div class="wrapper">	
+		<div id="header">
+		</div>
+		
+		
+		<div id="main">
+			<ul id="nav">
+				
+			</ul>
+		
+				<div id="demos" class="tab">
+				
+				<a style="float:right" href="http://www.w3.org/html/logo/">
+					<img src="http://www.w3.org/html/logo/badge/html5-badge-h-multimedia.png" width="133" height="64" alt="HTML5 Powered with Multimedia" title="HTML5 Powered with Multimedia">
+				</a>
+				<h2>Demos</h2>
+				
+				
+				<div class="demo">
+					<h2>Standard div background</h2>
+					<div id="div_demo">
+						<span>This is a div demo</span>
+					</div>
+<pre><code>
+$('#div_demo').videoBG({
+	mp4:'bird.mp4',
+	ogv:'tunnel_animation.ogv',
+	webm:'tunnel_animation.webm',
+	poster:'bird.jpg',
+	scale:true,
+	zIndex:0
+});
+</code></pre>
+				</div>
+				
+				
+			</div>
 
-    <!-- Codrops top bar -->
-    <!--/ Codrops top bar -->
-
-    <header>
-        <h1>Fullscreen Video Slideshow <span>with BigVideo.js</span></h1>
-        <p>The videos in this demo are from <a href="http://beachfrontprod.blogspot.com" target="_blank">Beachfront B-Roll</a>, a great place to download unique HD stock video footage and animated backgrounds for any production purpose (for free!).</p>
-        <p><small>A demo for</small> <a href="http://dfcb.github.com/BigVideo.js/" target="_blank">BigVideo.js</a> <small>by <a href="http://twitter.com/johnpolacek" target="_blank" rel="author">@johnpolacek</a></small></p>
-    </header>
-
-    <div class="wrapper">
-        <div class="screen" id="screen-1" data-video="vid/bird.mp4">
-            <img src="img/bird.jpg" class="big-image" />
-            <h1 class="video-title">#1 LABORATORIA</h1>
-        </div>
-    </div>
-
-    <!-- BigVideo Dependencies -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>
-    <script src="js/jquery-ui-1.8.22.custom.min.js"></script>
-    <script src="js/jquery.imagesloaded.min.js"></script>
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
-
-    <!-- BigVideo -->
-    <script src="js/bigvideo.js"></script>
-
-    <!-- Tutorial Demo -->
-    <script src="js/jquery.transit.min.js"></script>
-    <script src="js/custom.js"></script>
+		</div>
+		<div class="clearfix">&nbsp;</div>
+		
+	</div>
 </body>
 </html>
