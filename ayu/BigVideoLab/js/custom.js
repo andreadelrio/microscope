@@ -1,1 +1,0 @@
-var videoBG = $('body').videoBG(options);
